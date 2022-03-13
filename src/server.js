@@ -4,7 +4,7 @@ const cors = require('cors')
 const routes = require('./routes')
 const server = express()
 
-mongoose.connect('mongodb+srv://testdata:admin@cluster0-1pdfy.mongodb.net/loja?retryWrites=true&w=majority', {
+mongoose.connect('---', {
     useUnifiedTopology: true,
     useNewUrlParser: true
 })
