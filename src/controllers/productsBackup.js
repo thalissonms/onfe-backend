@@ -29,15 +29,6 @@ module.exports = {
         
         const response = await axios.get(`http://localhost/alpha/loja.php?id=${ip}`)
         const {id, produto, med, qnt, preçoClient, dataRep, preçoForn, img} = response.data
-/*
-        const resp = await customSearch.cse.list({
-            auth:'AIzaSyBZxPEekjlGEqrDe6w_tqjHiJeU_J83_x4',
-            cx:'012358337667130757373:bbyj6fz1gmj',
-            q: produto,
-            searchType: 'image',
-            num:1
-        })
-*/
        
 
         const sendItens = await products.create({
